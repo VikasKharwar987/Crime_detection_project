@@ -8,7 +8,8 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import Model
 from collections import deque
 
-model = load_model('crime_detection_model.keras')
+# Load one of the trained models: GRU, LSTM, or BiLSTM
+model = load_model('crime_detection_model_gru.keras')
 
 base_model = EfficientNetB0(weights='imagenet', include_top=False, pooling='avg')
 feature_extractor = Model(inputs=base_model.input, outputs=base_model.output)
