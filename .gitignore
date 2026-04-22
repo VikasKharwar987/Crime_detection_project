@@ -1,0 +1,33 @@
+# Environments
+.env
+.venv
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+
+# Datasets and Extracted Data
+dataset/
+frame_data/
+test_video/
+output_video/
+
+# Model and Numpy Feature Files
+*.keras
+*.h5
+*.npy
+*.npz
+
+# Logs and outputs
+logs/
+*.log
